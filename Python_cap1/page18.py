@@ -1,25 +1,12 @@
-"""id"""
+"""lists in python"""
 
-v1 = "a"
-v2 = "b"
-print(id(v1))
-print(id(v2))
+strings = "ABCDE"
+# list = []
+# print(bool(list),type(list))
 
-"""Flags,is,is not,none"""
-
-condition = True
-passed_if = None
-
-if condition:
-    passed_if = True
-    print("condition is true")
-else:
-    print("condition is false")
-
-print(passed_if, passed_if is None)
-print(passed_if, passed_if is not None)
-
-if passed_if is None:
-    print("did not pass in if")
-elif passed_if is not None:
-    print("passed in if")
+list_1 = [123, True, "joão Vitor", 1.2, []]
+print(list_1[2])
+print(list_1)
+list_1[-3] = "Atumalaka"
+print(list_1[-3])
+print(list_1)

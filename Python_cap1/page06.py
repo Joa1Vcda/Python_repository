@@ -1,42 +1,11 @@
-'''arithmetic elements'''
+'''Funcion Input'''
 
-sum = 10+10
-print('Sum:',sum)
+#name = input('What is your name? ')
+#print(f'Your name is: {name}')
 
-subtraction = 10-8
-print('Subtraction:',subtraction)
+number_1 = input('Digit a Number: ')
+number_2 = input('Another Number: ')
 
-multiplication = 10*4
-print('Multiplication:',multiplication)
+sum_1 = int(number_2)+int(number_1)
 
-division = 10/2.2
-print('division:',division)
-
-division_without_decimal_places=10//2.2
-print('Division Without Decimal Places:',division_without_decimal_places)
-
-exponentiation = 2**4
-print('Exponentiation:',exponentiation)
-
-remainder = 55%2
-print('Remainder:',remainder)
-
-concatenation = 'Joao'+' '+'Vitor'
-print('Concatenacion:',concatenation)
-
-a_ten_times='A'*10
-print('A Ten Times:',a_ten_times)
-
-joao_three_times='Joao'*3
-print('Joao Three Times:',joao_three_times)
-
-#1. (n+n)
-#2. **
-#3. *  /  //  %
-#4. + -
-
-calculation_1 = 1+1**5+5
-print(calculation_1)
-
-calculation_2 = (1+1)**(5+5)
-print(calculation_2)
+print(f'The sum of the numbers is: {sum_1}')

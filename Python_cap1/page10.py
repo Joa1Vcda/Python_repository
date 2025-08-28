@@ -1,17 +1,42 @@
-'''Comparison Operators'''
+import sys
 
-'''
-Op              Meaning                             Example
->               Greater                             10>8
->=              Greather than or equal to           10>=10
-<               Lesser                              8<10
-<=              Lesser than or equal to             8<=8
-==              equal to                            8==8
-!=              diferent                            8!=10
-'''
+"""operators in & not in"""
 
-greater = 2>1
-lesser = 1<2
-equal = 'a' == 'a'
-diferent = 'a' != 'b'
-print(greater,lesser,equal,diferent,sep='\n')
+name = "João Vitor"
+
+"""  
+print(name[4])
+print(name[-6])
+
+print(" " in name)
+print("p" in name)
+
+print(" " not in name)
+print("p" not in name)
+"""
+seacher = input(f"send a part in which you want to find in {name}: ")
+if seacher in name:
+    print(f"the part you type ({seacher}) is in the{name}")
+elif seacher not in name:
+    print(f"the part you type ({seacher}) is not in the {name}")
+
+
+correct_login = "main@gmail.com"
+correct_login2 = "secundary@gmail.com"
+correct_passw = "123456"
+
+
+login = input("Enter the username: ")
+
+if login in (correct_login, correct_login2):
+    passw = input("Enter the password: ")
+elif login not in (correct_login, correct_login2):
+    print("Incorret username,exiting...")
+    sys.exit()
+
+if passw not in (correct_passw):
+    print("Incorrect password,try again later")
+elif not passw:
+    print("Nothing entered,try again later")
+else:
+    print("access garanted sucefully")

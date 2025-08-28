@@ -1,11 +1,17 @@
-'''Funcion Input'''
+'''Comparison Operators'''
 
-#name = input('What is your name? ')
-#print(f'Your name is: {name}')
+'''
+Op              Meaning                             Example
+>               Greater                             10>8
+>=              Greather than or equal to           10>=10
+<               Lesser                              8<10
+<=              Lesser than or equal to             8<=8
+==              equal to                            8==8
+!=              diferent                            8!=10
+'''
 
-number_1 = input('Digit a Number: ')
-number_2 = input('Another Number: ')
-
-sum_1 = int(number_2)+int(number_1)
-
-print(f'The sum of the numbers is: {sum_1}')
+greater = 2>1
+lesser = 1<2
+equal = 'a' == 'a'
+diferent = 'a' != 'b'
+print(greater,lesser,equal,diferent,sep='\n')

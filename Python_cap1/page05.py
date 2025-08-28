@@ -1,16 +1,42 @@
-'''First test'''
+'''arithmetic elements'''
 
-first_name='Joao Vitor'
-last_name='Cirqueira de Araujo'
-years_old=19
-birthday='26/01/2006'
-proof_of_age=years_old>=18
-height=1.76
+sum = 10+10
+print('Sum:',sum)
 
-print('Name:',first_name)
-print('Last Name:',last_name)
-print('Full Name:',first_name,last_name)
-print('Years Old:',years_old)
-print('birthday:',birthday)
-print('proof of age:',proof_of_age)
-print('height in meters:',height)
+subtraction = 10-8
+print('Subtraction:',subtraction)
+
+multiplication = 10*4
+print('Multiplication:',multiplication)
+
+division = 10/2.2
+print('division:',division)
+
+division_without_decimal_places=10//2.2
+print('Division Without Decimal Places:',division_without_decimal_places)
+
+exponentiation = 2**4
+print('Exponentiation:',exponentiation)
+
+remainder = 55%2
+print('Remainder:',remainder)
+
+concatenation = 'Joao'+' '+'Vitor'
+print('Concatenacion:',concatenation)
+
+a_ten_times='A'*10
+print('A Ten Times:',a_ten_times)
+
+joao_three_times='Joao'*3
+print('Joao Three Times:',joao_three_times)
+
+#1. (n+n)
+#2. **
+#3. *  /  //  %
+#4. + -
+
+calculation_1 = 1+1**5+5
+print(calculation_1)
+
+calculation_2 = (1+1)**(5+5)
+print(calculation_2)

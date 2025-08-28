@@ -1,22 +1,33 @@
-"""Third Test"""
+"basic string interpolation"
 
-first_val = input("Enter one value: ")
-second_val = input("Enter the second value: ")
+name = "João Vitor"
+value = 87.9082547191
+value_1 = -87.9082547191
+number = 980
+var = "%s,the value is %.2f" % (name, value)
+print(var)
+hexa = "%i is %X in hexadecimal" % (number, number)
+print(hexa)
 
-"""just a attempt
+"""f-strings"""
 
-val1 = int(first_val)
-val2 = int(second_val)
+var_1 = f"{name}, the value is {value:+.2f}"
+print(var_1)
 
-if first_val>second_val:
-    print(f'first value: {val1} is greater than second value: {val2}')
-elif second_val>first_val:
-    print(f'second value: {val2} is greater than first value: {val1}')
-"""
+var_2 = f"{name}, the value is {value_1:-.2f}"
+print(var_2)
 
-if first_val > second_val:
-    print(f"first value: {first_val} is greater than second value: {second_val}")
-elif second_val > first_val:
-    print(f"second value: {second_val} is greater than first value: {first_val}")
-else:
-    print(f"first value: {first_val} is equal to second value: {second_val}")
+print(f"{number} is {number:X} in hexadecimal")
+
+print(f"{name: >10}.")
+print(f"{name: <10}.")
+print(f"{name:-^10}.")
+
+"""slicing strings"""
+
+name = "joão Vitor"
+print(len(name))  # len si for count elements
+print(name[:5])
+print(name[5:10])
+print(name[: len(name) : 2])
+print(name[-1 : -len(name) : -2])

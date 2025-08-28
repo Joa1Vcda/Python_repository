@@ -1,65 +1,19 @@
-# """while/break/continue"""
+"""methods in lists"""
 
-# # attribution operators
-# # =     +=      -=      *=      /=      //=     %=
+# append-add a item from the end of list
+# insert-add a element in the list(index,value)
+# pop-deletes the end of the list or the chosen index
+# del-deletes a chosen index
+# clear-clear the list
 
-# """loop"""
-# condition = True
-
-# while condition:
-#     name = input("Enter your name: ")
-#     print(f"your name is {name}")
-#     if name == "sair":
-#         break
-
-# """counter"""
-# counter = 0
-
-# while counter < 40:
-#     counter += 1
-
-#     if counter == 6:
-#         continue
-
-#     if counter >= 12 and counter <= 27:
-#         print("I will not show the", counter)
-#         continue
-
-#     print(counter)
-# counter = 0
-
-# while counter < 40:
-#     counter += 1
-
-#     if counter == 6:
-#         continue
-
-#     if counter >= 12 and counter <= 27:
-#         print("I will not show the", counter)
-#         continue
-
-#     print(counter)
-
-# number_of_rows = 5
-# number_of_columns = 5
-
-# row = 1
-
-# while row <= number_of_rows:
-#     column = 1
-#     while column <= number_of_columns:
-#         print(f"{row=},{column=}")
-#         column += 1
-#     row += 1
-
-"""intering strings with while"""
-
-NAME = "João Vitor"
-new_name = ""
-start = 0
-
-while start < len(NAME):
-    new_name += f"*{NAME[start]}"
-    start += 1
-
-print(new_name)
+list = [2, 4, 6, 8, 10, 11]
+list.append(12)
+print(list)
+list.pop(-2)
+print(list)
+del list[-1]
+print(list)
+list.insert(0, 0)
+print(list)
+list.clear()
+print(list)

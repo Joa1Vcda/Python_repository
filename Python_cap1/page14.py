@@ -1,33 +1,25 @@
-"basic string interpolation"
+"""id"""
 
-name = "João Vitor"
-value = 87.9082547191
-value_1 = -87.9082547191
-number = 980
-var = "%s,the value is %.2f" % (name, value)
-print(var)
-hexa = "%i is %X in hexadecimal" % (number, number)
-print(hexa)
+v1 = "a"
+v2 = "b"
+print(id(v1))
+print(id(v2))
 
-"""f-strings"""
+"""Flags,is,is not,none"""
 
-var_1 = f"{name}, the value is {value:+.2f}"
-print(var_1)
+condition = True
+passed_if = None
 
-var_2 = f"{name}, the value is {value_1:-.2f}"
-print(var_2)
+if condition:
+    passed_if = True
+    print("condition is true")
+else:
+    print("condition is false")
 
-print(f"{number} is {number:X} in hexadecimal")
+print(passed_if, passed_if is None)
+print(passed_if, passed_if is not None)
 
-print(f"{name: >10}.")
-print(f"{name: <10}.")
-print(f"{name:-^10}.")
-
-"""slicing strings"""
-
-name = "joão Vitor"
-print(len(name))  # len si for count elements
-print(name[:5])
-print(name[5:10])
-print(name[: len(name) : 2])
-print(name[-1 : -len(name) : -2])
+if passed_if is None:
+    print("did not pass in if")
+elif passed_if is not None:
+    print("passed in if")

@@ -1,34 +1,24 @@
-'''Second Test(IMC)'''
+"""if/elif/else(conditions)"""
 
-name='Joao Vitor'
-height=1.76
-weight=69.5
-imc=weight/height**2
+condition = True
 
-#print(name,'have',height,'of height,')
-#print('your weight is',weight,'and your IMC is')
-#print(imc)
+"""
+if condition:
+    print('Condition is True')
+else:
+    print('The Condition is False')
+"""
 
-'''formatation of strings(f-strings)'''
+door = input("do you wanna entry or exit? ")
 
-#print(f'{name} have {height:.2f} of height,')
-#print(f'your weight is {weight} and your IMC is')
-#print= (imc)
-
-linha_1 = (f'{name} have {height:.2f} of height,')
-linha_2 = (f'your weight is {weight:.3f} and your IMC is')
-linha_3 = (imc)
-
-#print(linha_1,linha_2,linha_3,sep='\r')
-print(linha_1,linha_2,linha_3,sep=' ')
-
-'''formatation of strings(format)'''
-
-a='A'
-b='B'
-c=1.1
-
-string = '{} {} {:.2f} {}'
-format_1= string.format(a,b,c,3) 
-
-print(format_1)
+if door == "entry":
+    print("You entrered in the system")
+elif door == "exit":
+    print("You exited of the system")
+else:
+    print("you need to digit entry or exit")
+    door_2 = input("do you wanna entry or exit? ")
+    if door_2 == "entry":
+        print("You entrered in the system")
+    elif door_2 == "exit":
+        print("You exited of the system")

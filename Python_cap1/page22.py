@@ -1,14 +1,29 @@
-"""challenge 1"""
+"""mutable or immutable data"""
 
-phrase = (
-    "Python is a multi-paradigm programming language."
-    "python was crated by Guido Van Rossum"
-)
+name = "luiz"
+name = "João Vitor"
+print(name)
 
-print(type(phrase))
-# i = 0
+list_a = ["João", "Sophia", "Lucas"]
+list_b = list_a
+list_c = list_a.copy()
 
-# while i < len(phrase):
-#     new_name = phrase(i)
+list_a.pop(-1)
+print(list_b)
+print(list_c)
 
-#     i += 1
+"""'for in in lists"""
+
+list = ["João", "Sophia"]
+for nome in list:
+    print(nome)
+
+indexes = range(len(list))
+
+for index in indexes:
+    print(f"index: {index},item: {list[index]}")
+
+i = 0
+while i < len(list):
+    print(f"index: {i},item: {list[i]}")
+    i += 1
